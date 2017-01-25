@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-plugin-usage-descriptions" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+	<name>App Usage Descriptions</name>
+	<author>William Isted - https://github.com/WilliamIsted</author>
+	<description>Add usage descriptions to Info.plist to allow access to camera and photo library.</description>
+	<engines>
+		<engine name="cordova" version=">=3.0.0"/>
+	</engines>
+	<platform name="ios">
+		<config-file parent="NSCameraUsageDescription" target="*-Info.plist">
+			<string></string>
+		</config-file>
+		<config-file parent="NSPhotoLibraryUsageDescription" target="*-Info.plist">
+			<string></string>
+		</config-file>
+	</platform>
+</plugin>
